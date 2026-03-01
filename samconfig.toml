@@ -1,0 +1,12 @@
+[staging.deploy.parameters]
+stack_name = "todo-list-aws"
+resolve_s3 = true
+s3_prefix = "todo-list-aws"
+capabilities = "CAPABILITY_IAM"
+parameter_overrides = "Stage=\"staging\""
+image_repositories = []
+confirm_changeset = true
+disable_rollback = true
+
+[staging.global.parameters]
+region = "us-east-1"
