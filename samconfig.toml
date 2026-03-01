@@ -1,0 +1,12 @@
+[production.deploy.parameters]
+stack_name = "production-todo-list-aws"
+resolve_s3 = true
+s3_prefix = "production-todo-list-aws"
+capabilities = "CAPABILITY_IAM"
+parameter_overrides = "Stage=\"production\""
+image_repositories = []
+confirm_changeset = true
+disable_rollback = true
+
+[production.global.parameters]
+region = "us-east-1"
